@@ -8,7 +8,7 @@ EQ.CONFIG = Object.assign({
   supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFrc29iZHltYnJ0dW1pZXdrYnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMwMDM0NTcsImV4cCI6MjEwODU3OTQ1N30.RHYD-174MfBrc2H9LTYJFA2yiTFrPM2C3lOowonRZOA",   // chave "anon public" (pode ficar no app)
   conteudoUrl: "",                 // vazio = <supabaseUrl>/storage/v1/object/public/conteudo/
   funcoesUrl: "",                  // vazio = <supabaseUrl>/functions/v1/
-  responsavelUrl: "",              // endereço público da página do responsável (responsavel.html)
+  responsavelUrl: "https://diovanidemarc-dot.github.io/grifo-site/responsavel.html",   // site público (repositório grifo-site, GitHub Pages)
   posthogKey: "", posthogHost: "https://us.i.posthog.com",
   sentryDsn: "",
   revenuecat: { ios: "", android: "" }, entitlement: "premium",
@@ -16,7 +16,8 @@ EQ.CONFIG = Object.assign({
     rewardedAndroid: "ca-app-pub-3940256099942544/5224354917",
     rewardedIos: "ca-app-pub-3940256099942544/1712485313"
   },
-  privacidadeUrl: "", termosUrl: "",
+  privacidadeUrl: "https://diovanidemarc-dot.github.io/grifo-site/privacidade.html",
+  termosUrl: "https://diovanidemarc-dot.github.io/grifo-site/termos.html",
   painelTeste: false                // true só no build do teste fechado: mostra no Perfil o painel de resumos para quem aplica o teste
                                     // (no navegador o painel sempre aparece)
 }, window.EQ_OVERRIDE || {});
