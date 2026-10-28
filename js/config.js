@@ -12,8 +12,8 @@ EQ.CONFIG = Object.assign({
   posthogKey: "", posthogHost: "https://us.i.posthog.com",
   sentryDsn: "",
   revenuecat: { ios: "", android: "" }, entitlement: "premium",
-  admob: {                          // IDs de TESTE do Google; troque pelos seus antes de publicar
-    rewardedAndroid: "ca-app-pub-3940256099942544/5224354917",
+  admob: {                          // Android: bloco "Coração extra" (premiado) do app Grifo; iOS ainda com o ID de TESTE do Google
+    rewardedAndroid: "ca-app-pub-9085415377735187/2251995835",
     rewardedIos: "ca-app-pub-3940256099942544/1712485313"
   },
   privacidadeUrl: "https://diovanidemarc-dot.github.io/grifo-site/privacidade.html",
