@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Grifo · Responsável</title>
+<link rel="stylesheet" href="css/app.css">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} [hidden]{display:none!important}
+.semana{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;align-items:end;height:140px}
+.semana .col{display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end}
+.semana .b{width:100%;border-radius:8px 8px 3px 3px;background:var(--pen-soft);min-height:4px}
+.semana .b.meta{background:var(--flame)}
+.semana small{font-size:.72rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.semana .lim{position:relative}
+.arearow{display:grid;grid-template-columns:110px 1fr 54px;gap:10px;align-items:center;padding:6px 0}
+.arearow .trk{height:10px;background:var(--line);border-radius:99px;overflow:hidden}.arearow .trk i{display:block;height:100%;background:var(--pen)}
+</style>
+</head>
+<body>
+<header class="hud"><div class="wrap"><b style="font-family:var(--display);font-size:1.15rem">Grifo</b><div class="spacer"></div><span class="muted small">Área do responsável</span></div></header>
+<main class="wrap" id="r"></main>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/config.js"></script>
+<script src="js/responsavel.js"></script>
+</body>
+</html>
