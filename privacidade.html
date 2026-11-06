@@ -27,6 +27,9 @@ Encarregado de dados (DPO): <span class="pendente">[NOME]</span> — <span class
 <tr><td>Ano de nascimento</td><td>No primeiro acesso (opcional)</td><td>Aplicar proteções para menores de 18 anos (anúncios e análise de uso)</td></tr>
 <tr><td>Respostas, acertos, XP, fases, tempo de estudo</td><td>Durante o uso</td><td>Funcionamento do jogo, revisão espaçada e metas diárias</td></tr>
 <tr><td>Reportes de questão</td><td>Se você reportar um erro</td><td>Corrigir o conteúdo</td></tr>
+<tr><td>Texto e imagens das páginas de um PDF seu</td><td>Só quando você pede para gerar questões em Meus materiais</td><td>Criar as questões. Não guardamos esse conteúdo (seção 7)</td></tr>
+<tr><td>Quantidade de questões geradas e de envios recusados pela IA</td><td>Quando você gera questões</td><td>Aplicar o limite mensal do seu plano e proteger o recurso contra abuso</td></tr>
+<tr><td>Denúncias de conteúdo</td><td>Se você enviar uma denúncia em Meus materiais</td><td>Analisar o que foi relatado. Só guardamos o que você escrever</td></tr>
 <tr><td>Dados de uso (telas, eventos) e diagnóstico de falhas</td><td>Durante o uso; você pode desligar a análise de uso no Perfil</td><td>Melhorar o app e corrigir erros</td></tr>
 <tr><td>Identificador de publicidade do aparelho</td><td>Ao exibir anúncios (pelo Google AdMob)</td><td>Entregar e medir anúncios <b>não personalizados</b></td></tr>
 <tr><td>Status de assinatura</td><td>Se você assinar o Premium</td><td>Liberar os recursos pagos</td></tr>
@@ -38,8 +41,11 @@ Encarregado de dados (DPO): <span class="pendente">[NOME]</span> — <span class
 <ul>
 <li>anúncios sempre <b>não personalizados</b>, com a sinalização de menor de idade para a rede de anúncios;</li>
 <li>análise de uso <b>sem perfil individual</b>;</li>
-<li>supervisão parental: o aluno pode gerar um código para que o responsável veja um resumo semanal e defina um limite diário de tempo.</li>
+<li>supervisão parental: o aluno pode gerar um código para que o responsável veja um resumo semanal e defina um limite diário de tempo;</li>
+<li>em Meus materiais: bloqueio para menores de 13 anos e envio só do texto das páginas, sem imagens.</li>
 </ul>
+<p><b>Compromisso de conformidade:</b> seguimos a LGPD, inclusive o art. 14 sobre dados de crianças e adolescentes, e o Estatuto Digital da Criança e do Adolescente. O Grifo não é destinado a menores de 13 anos, e quem informa ter menos de 13 não pode usar a geração de questões por IA.</p>
+<p><b>Inteligência artificial e segurança:</b> as questões de Meus materiais são escritas por uma IA, e o app avisa disso. A IA foi instruída a manter o conteúdo adequado à idade. Quando ela recusa um envio, a recusa é contada na conta, sem guardar o conteúdo, e recusas repetidas suspendem a geração. O conteúdo proibido inclui material sexual envolvendo menores. A Anthropic também monitora o uso da sua API e pode reportar esse tipo de material às autoridades. Dentro do app há um botão para denunciar conteúdo inadequado.</p>
 <p>Baús e gemas do app têm quantidade fixa, não são vendidos e não têm valor em dinheiro.</p>
 
 <h2>4. Bases legais</h2>
@@ -53,21 +59,32 @@ Encarregado de dados (DPO): <span class="pendente">[NOME]</span> — <span class
 <li><b>RevenueCat</b>, <b>Google Play</b> e <b>Apple</b>: gestão de assinaturas;</li>
 <li><b>PostHog</b>: análise de uso;</li>
 <li><b>Sentry</b>: relatórios de falhas;</li>
-<li><b>Brevo</b>: envio do código de login por e-mail.</li>
+<li><b>Brevo</b>: envio do código de login por e-mail;</li>
+<li><b>Anthropic</b> (EUA): geração de questões a partir dos PDFs que você escolher, só quando você usa esse recurso.</li>
 </ul>
 <p>Alguns desses fornecedores processam dados fora do Brasil, com as salvaguardas previstas no art. 33 da LGPD. Não vendemos dados pessoais.</p>
 
 <h2>6. Por quanto tempo guardamos</h2>
-<p>Enquanto sua conta existir. Contas de convidado (sem e-mail) sem nenhum uso por 12 meses são apagadas automaticamente, com todo o progresso. Ao excluir a conta, apagamos perfil, progresso, respostas, caderno de erros e vínculo com o responsável. Reportes de questão e registros de falha ficam guardados sem identificação. Registros de acesso podem ser mantidos por 6 meses, conforme o Marco Civil da Internet (Lei 12.965/2014).</p>
+<p>Enquanto sua conta existir. Contas de convidado (sem e-mail) sem nenhum uso por 12 meses são apagadas automaticamente, com todo o progresso. Ao excluir a conta, apagamos perfil, progresso, respostas, caderno de erros, contagem de gerações de questões, vínculo com o responsável e, neste aparelho, os PDFs e as questões de Meus materiais. Reportes de questão e registros de falha ficam guardados sem identificação. Registros de acesso podem ser mantidos por 6 meses, conforme o Marco Civil da Internet (Lei 12.965/2014).</p>
 
-<h2>7. Seus direitos</h2>
+<h2>7. Meus materiais: PDFs e inteligência artificial</h2>
+<p>O recurso Meus materiais só funciona se você adicionar um PDF e aceitar o aviso mostrado no app.</p>
+<ul>
+<li><b>O arquivo fica no seu aparelho.</b> O PDF e as questões geradas não são enviados aos nossos servidores para armazenamento. Eles ficam guardados só no aparelho, até você apagar o material, excluir a conta ou desinstalar o app.</li>
+<li><b>O que é enviado:</b> quando você pede para gerar questões, o texto das páginas escolhidas e, para maiores de 18 anos, a imagem das páginas com fórmulas, figuras ou sem texto passam pelo nosso servidor até a Anthropic, que cria as questões. O nome do arquivo não é enviado.</li>
+<li><b>O que guardamos:</b> nada desse conteúdo fica no Grifo. Guardamos só quantas gerações cada conta fez no mês e o total de uso do app, sem o conteúdo. A Anthropic trata o conteúdo conforme os termos dela para clientes de API e pode retê-lo por um período limitado.</li>
+<li><b>Seu cuidado:</b> não envie documentos com dados pessoais, seus ou de outras pessoas.</li>
+<li><b>Menores de 18 anos ou idade não informada:</b> use este recurso com o conhecimento do seu responsável. Só o texto das páginas é enviado, nunca imagens.</li>
+</ul>
+
+<h2>8. Seus direitos</h2>
 <p>Você pode confirmar se tratamos seus dados, acessá-los, corrigi-los, pedir a portabilidade ou a exclusão, revogar consentimentos e reclamar à ANPD. Para isso, escreva para <span class="pendente">[E-MAIL DE PRIVACIDADE]</span>. Respondemos em até 15 dias.</p>
 <p><b>Excluir a conta:</b> no app, vá em <i>Perfil → Excluir conta</i>, ou siga as instruções em <a href="excluir-conta.html">excluir-conta.html</a>.</p>
 
-<h2>8. Segurança</h2>
+<h2>9. Segurança</h2>
 <p>Os dados trafegam criptografados (HTTPS), e o acesso no servidor é restrito a cada usuário por regras de segurança no banco de dados.</p>
 
-<h2>9. Mudanças nesta política</h2>
+<h2>10. Mudanças nesta política</h2>
 <p>Avisaremos no app sobre mudanças relevantes. A data no topo mostra a versão em vigor.</p>
 
 <footer class="muted"><a href="termos.html">Termos de Uso</a> · <a href="excluir-conta.html">Excluir conta</a></footer>

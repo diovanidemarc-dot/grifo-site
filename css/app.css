@@ -331,6 +331,29 @@ textarea.out{width:100%;min-height:150px;font:inherit;font-size:.78rem;border:1p
 .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--good);margin-right:6px}
 .status-dot.off{background:var(--warn)}
 .syncline{font-size:.78rem;color:var(--ink-2);display:flex;align-items:center}
+/* Meus materiais */
+.quick .wide{grid-column:1/-1}
+.matcard{display:flex;flex-direction:column;gap:4px;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);box-shadow:inset 4px 0 0 var(--marca);border-radius:var(--r);padding:12px 14px 12px 18px}
+.matcard b{font-family:var(--display);font-weight:400;font-size:1.2rem;line-height:1.15;overflow-wrap:anywhere}
+.matcard span{font-size:.84rem;color:var(--ink-2)}
+.mattitulo{overflow-wrap:anywhere}
+.faixa{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.matq summary{align-items:flex-start}
+.matq summary > span{min-width:0}
+.matq summary > svg{flex:none}
+.matq .apoio-body{gap:8px}
+.matq .alt{padding:2px 0}
+.matq .alt.certa{font-weight:700;color:var(--good)}
+.trecho{border-left:3px solid var(--marca);background:var(--marca-soft);border-radius:4px;padding:8px 10px;font-size:.9rem;overflow-wrap:anywhere}
+.alerta{border-left:3px solid var(--warn);background:var(--warn-bg);border-radius:4px;padding:8px 10px;font-size:.9rem}
+.matacoes{display:flex;gap:8px;flex-wrap:wrap}
+.gerando{text-align:center;align-items:center}
+.gerando .pena{width:64px;height:8px;border-radius:3px;background:var(--marca);transform:skewX(-14deg);transform-origin:left center;animation:escreve 1.4s ease-in-out infinite alternate}
+@keyframes escreve{from{transform:skewX(-14deg) scaleX(.15)}to{transform:skewX(-14deg) scaleX(1)}}
+.zoom .zinfo{flex:1;align-self:center;color:#fff;font-size:.84rem;font-weight:700;line-height:1.15}
+.zoom .zbar:has(.zinfo) button{min-width:42px}
+.zoom .zarea canvas{background:#fff;border-radius:4px;max-width:none;flex:none;margin:auto;display:block}
+.zoom .zmsg{color:#fff;padding:0 16px 10px;font-size:.88rem}
 /* pausa (limite do responsável) */
 .pausa{text-align:center;align-items:center}
 .pausa .big{font-size:2.8rem}
